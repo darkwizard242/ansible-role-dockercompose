@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   role_name: dockercompose
-  author: Ali Muhammad
+  author: darkwizard242
   description: Installs/Uninstalls 'docker-compose' to define and run multi comtainer docker applications.
   company: none
   license: MIT
