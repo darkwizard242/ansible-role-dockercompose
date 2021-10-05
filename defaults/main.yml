@@ -7,4 +7,3 @@ dockercompose_osarch: "linux-x86_64"
 dockercompose_dl_url: "https://github.com/docker/compose/releases/download/{{ dockercompose_version }}/{{ dockercompose_app }}-{{ dockercompose_osarch }}"
 dockercompose_bin_path: /usr/local/bin
 dockercompose_file_mode: '0755'
-https://github.com/docker/compose/releases/download/v2.0.0/docker-compose-linux-amd64
