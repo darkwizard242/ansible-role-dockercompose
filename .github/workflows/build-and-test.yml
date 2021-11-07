@@ -6,7 +6,11 @@ on:
       - 'master'
   push:
     branches:
+      - 'feature*'
+      - 'feature/*'
       - 'feature_*'
+      - 'hotfix*'
+      - 'feature/*'
       - 'master'
   schedule:
     - cron: '0 14 * * *'
@@ -42,7 +46,7 @@ jobs:
     name: Build & Test
     runs-on: ubuntu-18.04
     strategy:
-      max-parallel: 6
+      max-parallel: 8
       matrix:
         IMAGE: [ubuntu-20.04, ubuntu-18.04, ubuntu-16.04, centos-8, centos-7, debian-buster, debian-stretch]
 
@@ -53,10 +57,10 @@ jobs:
       with:
         path: 'darkwizard242.dockercompose'
 
-    - name: Set up Python 3.8
+    - name: Set up Python 3.10.0
       uses: actions/setup-python@v2
       with:
-        python-version: 3.8
+        python-version: 3.10.0
 
     - name: Update repo cache, install python3-setuptools and required pip modules
       run: |
