@@ -16,23 +16,29 @@ Available variables are listed below (located in `defaults/main.yml`):
 
 ```yaml
 dockercompose_app: docker-compose
-dockercompose_version: 2.2.2
-dockercompose_osarch: "linux-x86_64"
-dockercompose_dl_url: https://github.com/docker/compose/releases/download/{{ dockercompose_version }}/{{ dockercompose_app }}-{{ dockercompose_osarch }}
+dockercompose_version: 2.2.3
+dockercompose_os: "linux"
+dockercompose_arch: "x86_64"
+dockercompose_dl_url: https://github.com/docker/compose/releases/download/v{{ dockercompose_version }}/{{ dockercompose_app }}-{{ dockercompose_os }}-{{ dockercompose_arch }}
 dockercompose_bin_path: /usr/local/bin
+dockercompose_file_owner: root
+dockercompose_file_group: root
 dockercompose_file_mode: '0755'
 ```
 
 ### Variables table:
 
-Variable                | Value (default)                                                                                                                      | Description
------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------
-dockercompose_app       | docker-compose                                                                                                                       | Defines the app to install i.e. **docker-compose**
-dockercompose_version   | 2.2.2                                                                                                                                | Defined to dynamically fetch the desired version to install. Defaults to: **2.2.2**
-dockercompose_osarch    | "linux-x86_64"                                                                                                                       | Defines os architecture. Used for obtaining the correct type of binaries based on OS System Architecture. Defaults to: **"linux-x86_64"**
-dockercompose_dl_url    | <https://github.com/docker/compose/releases/download/{{> dockercompose_version }}/{{ dockercompose_app }}-{{ dockercompose_osarch }} | Defines URL to download the docker-compose binary from.
-dockercompose_bin_path  | /usr/local/bin                                                                                                                       | Defined to dynamically set the appropriate path to store docker-compose binary into. Defaults to (as generally available on any user's PATH): **/usr/local/bin**
-dockercompose_file_mode | `'0755'`                                                                                                                             | Mode for the binary file of docker-compose.
+Variable                | Description
+----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+dockercompose_app       | Defines the app to install i.e. **docker-compose**
+dockercompose_version   | Defined to dynamically fetch the desired version to install. Defaults to: **2.2.3**
+dockercompose_os        | Defines OS type. Used for obtaining the correct type of binaries based on OS. Defaults to: **linux**
+dockercompose_arch      | Defines Architecture type. Used for obtaining the correct type of binaries based on Architecture. Defaults to: **x86_64**
+dockercompose_dl_url    | Defines URL to download the docker-compose binary from.
+dockercompose_bin_path  | Defined to dynamically set the appropriate path to store docker-compose binary into. Defaults to (as generally available on any user's PATH): **/usr/local/bin**
+dockercompose_owner     | Owner for the binary file of docker-compose.
+dockercompose_group     | Group for the binary file of docker-compose.
+dockercompose_file_mode | Mode for the binary file of docker-compose.
 
 ## Dependencies
 
