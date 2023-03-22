@@ -2,7 +2,7 @@
 # defaults file for dockercompose
 
 dockercompose_app: docker-compose
-dockercompose_version: 2.16.0
+dockercompose_version: 2.17.0
 dockercompose_os: "linux"
 dockercompose_arch: "x86_64"
 dockercompose_dl_url: https://github.com/docker/compose/releases/download/v{{ dockercompose_version }}/{{ dockercompose_app }}-{{ dockercompose_os }}-{{ dockercompose_arch }}
