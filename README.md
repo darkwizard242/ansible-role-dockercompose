@@ -16,7 +16,7 @@ Available variables are listed below (located in `defaults/main.yml`):
 
 ```yaml
 dockercompose_app: docker-compose
-dockercompose_version: 2.19.1
+dockercompose_version: 2.20.0
 dockercompose_os: "linux"
 dockercompose_arch: "x86_64"
 dockercompose_dl_url: https://github.com/docker/compose/releases/download/v{{ dockercompose_version }}/{{ dockercompose_app }}-{{ dockercompose_os }}-{{ dockercompose_arch }}
@@ -31,7 +31,7 @@ dockercompose_file_mode: '0755'
 Variable                | Description
 ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 dockercompose_app       | Defines the app to install i.e. **docker-compose**
-dockercompose_version   | Defined to dynamically fetch the desired version to install. Defaults to: **2.19.1**
+dockercompose_version   | Defined to dynamically fetch the desired version to install. Defaults to: **2.20.0**
 dockercompose_os        | Defines OS type. Used for obtaining the correct type of binaries based on OS. Defaults to: **linux**
 dockercompose_arch      | Defines Architecture type. Used for obtaining the correct type of binaries based on Architecture. Defaults to: **x86_64**
 dockercompose_dl_url    | Defines URL to download the docker-compose binary from.
