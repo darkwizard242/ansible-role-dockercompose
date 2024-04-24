@@ -1,4 +1,4 @@
-[![build-test](https://github.com/darkwizard242/ansible-role-dockercompose/workflows/build-and-test/badge.svg?branch=master)](https://github.com/darkwizard242/ansible-role-dockercompose/actions?query=workflow%3Abuild-and-test) [![release](https://github.com/darkwizard242/ansible-role-dockercompose/workflows/release/badge.svg)](https://github.com/darkwizard242/ansible-role-dockercompose/actions?query=workflow%3Arelease) ![Ansible Role](https://img.shields.io/ansible/role/47543?color=dark%20green%20) ![Ansible Role](https://img.shields.io/ansible/role/d/47543?label=role%20downloads) ![Ansible Quality Score](https://img.shields.io/ansible/quality/47543?label=ansible%20quality%20score) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ansible-role-dockercompose&metric=alert_status)](https://sonarcloud.io/dashboard?id=ansible-role-dockercompose) [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=ansible-role-dockercompose&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=ansible-role-dockercompose) [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=ansible-role-dockercompose&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=ansible-role-dockercompose) [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=ansible-role-dockercompose&metric=security_rating)](https://sonarcloud.io/dashboard?id=ansible-role-dockercompose) ![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/darkwizard242/ansible-role-dockercompose?label=release) ![GitHub repo size](https://img.shields.io/github/repo-size/darkwizard242/ansible-role-dockercompose?color=orange&style=flat-square)
+[![build-test](https://github.com/darkwizard242/ansible-role-dockercompose/workflows/build-and-test/badge.svg?branch=master)](https://github.com/darkwizard242/ansible-role-dockercompose/actions?query=workflow%3Abuild-and-test) [![release](https://github.com/darkwizard242/ansible-role-dockercompose/workflows/release/badge.svg)](https://github.com/darkwizard242/ansible-role-dockercompose/actions?query=workflow%3Arelease) ![Ansible Role](https://img.shields.io/ansible/role/d/darkwizard242/dockercompose) [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=ansible-role-dockercompose&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=ansible-role-dockercompose) [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=ansible-role-dockercompose&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=ansible-role-dockercompose) [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=ansible-role-dockercompose&metric=security_rating)](https://sonarcloud.io/dashboard?id=ansible-role-dockercompose) ![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/darkwizard242/ansible-role-dockercompose?label=release) ![GitHub repo size](https://img.shields.io/github/repo-size/darkwizard242/ansible-role-dockercompose?color=orange&style=flat-square)
 
 # Ansible Role: dockercompose
 
@@ -16,7 +16,7 @@ Available variables are listed below (located in `defaults/main.yml`):
 
 ```yaml
 dockercompose_app: docker-compose
-dockercompose_version: 2.26.1
+dockercompose_version: 2.27.0
 dockercompose_os: "linux"
 dockercompose_arch: "x86_64"
 dockercompose_dl_url: https://github.com/docker/compose/releases/download/v{{ dockercompose_version }}/{{ dockercompose_app }}-{{ dockercompose_os }}-{{ dockercompose_arch }}
@@ -31,7 +31,7 @@ dockercompose_file_mode: '0755'
 Variable                | Description
 ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 dockercompose_app       | Defines the app to install i.e. **docker-compose**
-dockercompose_version   | Defined to dynamically fetch the desired version to install. Defaults to: **2.26.1**
+dockercompose_version   | Defined to dynamically fetch the desired version to install. Defaults to: **2.27.0**
 dockercompose_os        | Defines OS type. Used for obtaining the correct type of binaries based on OS. Defaults to: **linux**
 dockercompose_arch      | Defines Architecture type. Used for obtaining the correct type of binaries based on Architecture. Defaults to: **x86_64**
 dockercompose_dl_url    | Defines URL to download the docker-compose binary from.
