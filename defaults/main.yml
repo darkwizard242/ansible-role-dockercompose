@@ -2,7 +2,7 @@
 # defaults file for dockercompose
 
 dockercompose_app: docker-compose
-dockercompose_version: 2.35.1
+dockercompose_version: 2.36.1
 dockercompose_os: "{{ ansible_system | lower }}"
 dockercompose_arch: "x86_64"
 dockercompose_architecture_map:
