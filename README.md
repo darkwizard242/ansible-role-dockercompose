@@ -16,7 +16,7 @@ Available variables are listed below (located in `defaults/main.yml`):
 
 ```yaml
 dockercompose_app: docker-compose
-dockercompose_version: 2.38.1
+dockercompose_version: 2.38.2
 dockercompose_os: "{{ ansible_system | lower }}"
 dockercompose_arch: "x86_64"
 dockercompose_architecture_map:
@@ -40,7 +40,7 @@ dockercompose_file_mode: '0755'
 Variable                       | Description
 ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 dockercompose_app              | Defines the app to install i.e. **docker-compose**
-dockercompose_version          | Defined to dynamically fetch the desired version to install. Defaults to: **2.38.1**
+dockercompose_version          | Defined to dynamically fetch the desired version to install. Defaults to: **2.38.2**
 dockercompose_os               | Defines OS type. Used for obtaining the correct type of binaries based on OS.
 dockercompose_architecture_map | Used for obtaining the correct type of binaries based on Architecture.
 dockercompose_dl_url           | Defines URL to download the docker-compose binary from.
